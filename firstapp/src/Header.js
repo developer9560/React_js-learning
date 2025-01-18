@@ -17,4 +17,17 @@ function Header(){
     );
 }
 
-export default Header;
+
+
+
+// card items 
+
+function Card(){
+    return(
+        <div className='cardItems'> 
+        <h1 style = {{textAlign:"center"}}>card </h1>
+        </div>
+    );
+}
+
+export { Header,Card};
