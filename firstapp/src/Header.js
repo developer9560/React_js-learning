@@ -1,7 +1,7 @@
 
 import './App.css'
 
-function Header(){
+function Header(props){
     return(
         <div className="headerbox">
          <nav className="navbox">
@@ -22,10 +22,12 @@ function Header(){
 
 // card items 
 
-function Card(){
+
+function Card(props){
+    
     return(
         <div className='cardItems'> 
-        <h1 style = {{textAlign:"center"}}>card </h1>
+        <h1 style = {{textAlign:"center"}}>card {props.num}</h1>
         </div>
     );
 }

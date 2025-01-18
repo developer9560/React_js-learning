@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Header from './Header';
+
+// import "bootstrap/dist/css/bootstrap.css" // this is bootstrap css file and imported after installing bootstrap 
+// import "bootstrap/dist/js/bootstrap.bundle" 
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
