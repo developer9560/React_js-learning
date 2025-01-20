@@ -39,7 +39,7 @@ li{
   height: 15vh;
   background-color: aquamarine;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
 left: 0;
 bottom: 0;
 width: 100%;
@@ -54,5 +54,10 @@ color: white;
 }
 
 .row{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  justify-content:space-evenly;
+  justify-items: center;
+  align-items: center;
+  
 }

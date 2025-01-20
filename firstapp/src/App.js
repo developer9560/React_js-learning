@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import {Header , Card} from './Header';
+import {Header , Card, ProductItems} from './Header';
 import Footer from './Footer';
+import { blog } from './Data/Post.js';
 function App() {
  let info = {
   'heading' : "this is title",
@@ -11,9 +12,14 @@ function App() {
     <div>
       <Header/>
        <div className='row'>
-      <Card  num = "1"/>
-      <Card num = "2"/>
-      <Card num ="3" />
+      {blog.map((v , i)=>{
+        return (
+
+          <Card para = {blog[i]}/> 
+        )
+      })}
+      {/* <Card num = "2"/>
+      <Card num ="3" /> */}
       </div>
       <Footer/>
     </div>
