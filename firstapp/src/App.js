@@ -14,8 +14,8 @@ function App() {
        <div className='row'>
       {blog.map((v , i)=>{
         return (
-
-          <Card para = {blog[i]}/> 
+          // <Card para = {blog[i]}/> // by doing this can be access all product data
+          <Card para = {v} key = {i}/> // here key is added because to generate unique prodcut card 
         )
       })}
       {/* <Card num = "2"/>
@@ -27,3 +27,8 @@ function App() {
 }
 
 export default App;
+
+// it is all neccery package to install for fontawesome
+// npm i --save @fortawesome/fontawesome-svg-core
+// npm install --save @fortawesome/free-solid-svg-icons
+// npm install --save @fortawesome/react-fontawesome
