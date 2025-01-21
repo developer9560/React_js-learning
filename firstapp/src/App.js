@@ -4,13 +4,23 @@ import {Header , Card, ProductItems} from './Header';
 import Footer from './Footer';
 import { blog } from './Data/Post.js';
 function App() {
- let info = {
-  'heading' : "this is title",
-  'email' : "abcd@gmail.com",
+//  let info = {
+//   'heading' : "this is title",
+//   'email' : "abcd@gmail.com",
+//  }
+
+ let clickevent = ()=>{
+  alert("button was clicke");
+ }
+// here addum variable to use for paramtric function 
+ let addnum = (a , b)=>{
+  console.log(a+b)
  }
   return (
     <div>
       <Header/>
+       <button onClick={clickevent}>click me  </button> {/*on click function  */}
+       <button onClick={()=>addnum(34,53)}>add num </button> {/*on click function  for parametric funciton */}
        <div className='row'>
       {blog.map((v , i)=>{
         return (
