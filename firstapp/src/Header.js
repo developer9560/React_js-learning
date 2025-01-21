@@ -47,6 +47,6 @@ function ProductItems(){
         </div>
     );
 
-}
+} 
 
 export { Header,Card , ProductItems} ;

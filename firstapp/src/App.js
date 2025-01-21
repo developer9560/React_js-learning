@@ -7,6 +7,15 @@ import { useState } from 'react';
 function App() {
   let [count , setcount] = useState(1);
   let [pshow , setpshow] = useState(true);
+ let template = "";
+ 
+   if(pshow){
+    template = <div><ProductItems/></div>
+   }
+   else{ 
+    template = <h1>thi is template</h1>
+   }
+
 
 //  let info = {
 //   'heading' : "this is title",
@@ -27,8 +36,7 @@ function App() {
   return (
     <div>
       <Header/>
-
-      
+      {template}
       {count}
        <button onClick={clickevent}>click me  </button> {/*on click function  */}
        <button onClick={()=>addnum(34,53)}>add num </button> {/*on click function  for parametric funciton */}
