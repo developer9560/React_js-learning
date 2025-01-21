@@ -2,8 +2,6 @@ import { useState } from "react"
 
 export default function Password(){
     let [status, setStatue] = useState(false);
-
-    
     return(
         <div>
             <h1>password</h1>

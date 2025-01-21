@@ -12,3 +12,11 @@
     color:white;
     background-color: green;
 }
+.micon{
+    position: absolute;
+    right: 10px;
+
+}
+.activemenu{
+    left: 0%;
+}
