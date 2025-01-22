@@ -5,6 +5,8 @@ import btnModule from './Button.module.css';
 import Password from './Password.js'
 import ResponsiveMenu from './ResponsiveMenu.js';
 import faqQuestion from './DATA/faqQuestion.js';
+
+import Faqs from './Faqs.js';
 function App() {
   let [menustatus , setmenustatus] = useState(false);
   let [status , setstatus] = useState(false);
@@ -12,7 +14,10 @@ function App() {
   let[showAsn, setShowAsn] = useState(faqQuestion[0].id);
   return (
     <div className="App">
-      <div>
+
+      <Faqs/>
+
+      {/* <div> // this is faq layout 
         <h1>Frequently Asked Questions (FAQs)</h1>
         <div className='faqouter'>
           {faqQuestion.map((v , i)=>{
@@ -24,7 +29,10 @@ function App() {
             );
           })}
         </div>
-      </div>
+      </div> */}
+
+
+
      { /* tthis is previous layout of hide and show password and nevigation bar/}
       {/* <button className={btnModule.micon} onClick={()=>setmenustatus(!menustatus)} >&#9776;</button>
       <ResponsiveMenu status={menustatus}/>
