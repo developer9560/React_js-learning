@@ -1,0 +1,31 @@
+.headerbox {
+    background-color: #282c34;
+    height: fit-content;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .navbox{
+    height: fit-content;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: end;
+    margin-right: 100px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  ul{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+  
+  }
+  
+  li{
+    list-style: none;
+    margin: 10px;
+  }
