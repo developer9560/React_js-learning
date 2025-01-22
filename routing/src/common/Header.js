@@ -10,7 +10,7 @@ export default function Header() {
            <li> <Link to = "/Services">Services</Link></li>
            <li><Link to = "/About">about</Link></li>  
            <li><Link to = "/course">course</Link></li>
-           <li>SignUp</li>
+           <li><Link to = "/blog">Blog</Link></li>
        </ul>
     </nav>
    </div>

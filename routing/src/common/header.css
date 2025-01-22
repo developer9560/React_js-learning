@@ -29,3 +29,13 @@
     list-style: none;
     margin: 10px;
   }
+  .blogContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+  }
+  .box{
+   
+    height: 300px;
+    border: 2px solid black;
+  }
