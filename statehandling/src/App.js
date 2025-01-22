@@ -5,6 +5,7 @@ import btnModule from './Button.module.css';
 import Password from './Password.js'
 import ResponsiveMenu from './ResponsiveMenu.js';
 import faqQuestion from './DATA/faqQuestion.js';
+import Notification from './Notification.js';
 
 import Faqs from './Faqs.js';
 function App() {
@@ -14,7 +15,7 @@ function App() {
   let[showAsn, setShowAsn] = useState(faqQuestion[0].id);
   return (
     <div className="App">
-
+      {/* <Notification/> */} 
       <Faqs/>
 
       {/* <div> // this is faq layout 
