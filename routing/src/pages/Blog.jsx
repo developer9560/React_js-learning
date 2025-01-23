@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../common/Header' 
-import { blog } from '../Data/Post.js'
+import { blog } from '../Data/Post '
 import { Link } from 'react-router-dom';
 
 export default function Blog() {
@@ -20,7 +20,6 @@ export default function Blog() {
     </div>
   )
 }
-
 function Itemsbox(props) {
   return (
     <div className='box'>
